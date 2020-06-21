@@ -1,0 +1,59 @@
+body {
+  padding: 0;
+  margin: 0;
+  
+}
+
+.invisible {
+  display:none;
+}
+
+#all-pages {
+  margin: 0;
+  position:relative;
+}
+
+.page {
+  padding: 2em;
+  height: calc(100vh - 40px);
+  width: 100%;
+  will-change: transform;
+  transition: transform 0.5s ease-in;
+  box-sizing:border-box;
+}
+
+#page-1 {  
+  background-color: aliceblue;
+  position:absolute;
+}
+
+#page-2 {
+  background-color: bisque;
+  position:absolute;
+}
+
+#page-3 {
+  background-color: azure;
+  position: absolute;
+}
+
+ .hidden {
+  transform:translateX(-100%);
+ }
+
+.shown {
+  transform:translateX(0);
+} 
+
+#main {
+  margin:0!important;
+  padding:0!important;
+}
+
+#notification {
+  display: none
+}
+
+#notification.show {
+  display: block;
+}
